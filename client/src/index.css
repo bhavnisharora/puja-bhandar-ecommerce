@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* for smaller screens */
+@media (max-width: 768px) {
+  .hero-image {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbuttons {
+    position: absolute;
+    top: 15px;
+    left: 40%;
+    right: 60%;
+    /* left: 150px; */
+  }
+  .navcart {
+    position: absolute;
+    left: 40px;
+    /* font-size: 10px; */
+  }
+}
+
+/* for medium screens */
+/* 
+@media (min-width:769px) and (max-width:1024px) {
+  .hero-image{
+    height: 400px;
+  }
+} */
+
+/* for larger screens */
+/* 
+@media (max-width:1025px){
+  .hero-image{
+    height: 500px;
+  }
+} */
+
+/* login background */
+
+.login-background {
+  background-image: url(./src/assets/bg-image.jpg);
+  background-repeat: no-repeat;
+  height: 800px;
+  background-size: cover;
+  margin-bottom: -80px;
+  /* background-attachment: fixed; */
+}
+.register-background {
+  background-image: url(./src/assets/bg-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+  margin-bottom: -60px;
+}
+/* CartPage.css */
+@media only screen and (max-width: 768px) {
+  .cart-container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .cart-container {
+    padding: 20px;
+  }
+}
